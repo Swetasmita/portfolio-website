@@ -1,6 +1,6 @@
 import React from 'react';
 import todo from "../assets/projects/todoApp.png";
-import calculator from "../assets/projects/Js-calculator.png";
+import calculator from "../assets/projects/JS-calculator.png";
 import portfolio from "../assets/projects/portfolio.png";
 import weather from "../assets/projects/weather.png";
 
