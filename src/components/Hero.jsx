@@ -36,7 +36,7 @@ const Hero = () => {
             >
               I am a passionate frontend developer with a knack for crafting
               robust and scalable web applications that prioritize both
-              performance and user experience. With 3 years experience, I have
+              performance and user experience. With over 3 years of experience, I have
               honed my skills in front-end technologies such as Angular, React
               and JavaScript, along with back-end technologies like Node.js,
               PL/SQL. My goal is to leverage my expertise to create innovative

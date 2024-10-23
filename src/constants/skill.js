@@ -21,6 +21,13 @@ export const EXPERIENCES = [
       Participated in Agile scrum, daily stand-ups, and sprint planning meetings to ensure project alignment, contributing to timely project delivery.`,
       technologies: ["Angular","JavaScript", "HTML", "CSS", "jQuery" ,"Bootstrap", "SQL"],
     },
+    {
+      year: "2016 - 2017",
+      role: "Research Assistant",
+      company: "BIM Collective Research Group, SETU Waterford",
+      description: `Collaborated with stakeholders to gather requirements for Intern project and create mock-up visual designs using Photoshop. Designed, developed, and maintained the responsive web application. Tested and deployed the web application and delivered a successful presentation.`,
+      technologies: ["JavaScript", "HTML", "CSS", "jQuery" ,"Bootstrap"],
+    }
   ];
   
   export const PROJECTS = [
