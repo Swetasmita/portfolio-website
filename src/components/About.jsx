@@ -22,7 +22,7 @@ const About = () => {
             <motion.p className="my-2 max-w-2xl py-6" whileInView ={{ x: 0, opacity: 1 }} 
             initial={{ x: 100, opacity: 0 }}             
               transition={{ duration: 1 }}>
-              I am a dedicated and versatile software developer with 3 years of
+              I am a dedicated and versatile software developer with 3+ years of
               professional experience specializing in UI development. My
               expertise lies in creating efficient, user-friendly web
               applications using a diverse set of technologies, including
