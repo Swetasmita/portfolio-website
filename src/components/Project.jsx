@@ -106,13 +106,9 @@ const Project = () => {
         <div className="w-full lg:w-3/4 mb-6">
           <h6 className="mb-2 font-semibold text-center">Weather App in JS</h6>
           <p className="mb-4 ml-4 text-neutral-400 justify-center">
-            This application displays current weather conditions and forecasts
-            providiing weather information based on the user's entered location,
-            retrieving real-time data through a web services WeatherAPI. The app
-            typically uses HTML and CSS for the user interface, while JavaScript
-            handles the data fetching, processing, and display updates. TIt
-            displays how to work with asynchronous programming in fetching JSON
-            data and DOM manipulation.
+          This app shows current weather and forecasts by fetching real-time data from WeatherAPI based on the user's location. 
+          It uses HTML and CSS for the UI, while JavaScript handles fetching JSON data, processing, and displaying updates.
+         
           </p>
         </div>
 
