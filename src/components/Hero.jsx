@@ -1,65 +1,63 @@
-import React from "react";
-import profilepic from "../assets/profilePic.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll"; // make sure react-scroll is installed
 
-const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
-});
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
-            <motion.h1
-              variants={container(1.5)}
-              initial="hidden"
-              animate="visible"
-              className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
-            >
-              Swetasmita Chinaray
-            </motion.h1>
-            <motion.span
-              variants={container(2)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
-            >
-              Frontend developer
-            </motion.span>
-            <motion.p
-              variants={container(2.5)}
-              initial="hidden"
-              animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
-            >
-              I am a passionate frontend developer with a knack for crafting
-              robust and scalable web applications that prioritize both
-              performance and user experience. With over 4 years of experience, I have
-              honed my skills in front-end technologies such as Angular, React
-              and JavaScript, along with back-end technologies like Node.js,
-              PL/SQL. My goal is to leverage my expertise to create innovative
-              solutions that drive business growth and deliver exceptional user
-              experiences. I am committed to staying up-to-date with the latest
-              web technologies and constantly enhancing my skills to deliver the
-              best possible results for both users and clients.
-            </motion.p>
-          </div>
-        </div>
-
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1}}
-              transition={{ duration: 1, delay:2.1 }}
-              src={profilepic}
-              alt="profilepic" />
-          </div>
-        </div>
+    <section id="hero" className="relative flex items-center justify-center min-h-screen bg-neutral-900 overflow-hidden">
+      {/* Animated Background Blobs */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute bg-purple-700 opacity-30 w-96 h-96 rounded-full mix-blend-multiply filter blur-2xl animate-blob"></div>
+        <div className="absolute bg-blue-700 opacity-30 w-96 h-96 rounded-full mix-blend-multiply filter blur-2xl animate-blob animation-delay-2000"></div>
       </div>
-    </div>
+
+      {/* Hero Content */}
+      <div className="z-10 text-center p-6">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl md:text-6xl font-bold text-white mb-6"
+        >
+          Hi, I&apos;m <span className="text-purple-400">Swetasmita 👋</span>
+        </motion.h1>
+
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="text-2xl md:text-3xl font-semibold text-gray-300 mb-8"
+        >
+          Frontend Developer | JavaScript | React | Angular | TypeScript
+        </motion.h2>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="flex justify-center gap-6"
+        >
+          {/* View Projects Button */}
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 cursor-pointer"
+          >
+            View Projects
+          </Link>
+
+          {/* Contact Me Button */}
+          <Link
+            to="contact" // Matches the id="contact" in the Contact section
+            smooth={true}
+            duration={500}
+            className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 cursor-pointer"
+          >
+            Contact Me
+          </Link>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 

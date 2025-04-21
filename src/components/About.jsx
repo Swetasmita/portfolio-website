@@ -1,4 +1,3 @@
-import React from "react";
 import aboutImg from "../assets/about.jpg";
 import { motion } from "framer-motion";
 const About = () => {
@@ -10,25 +9,27 @@ const About = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex items-center justify-center w-90">
-            <motion.img 
-            whileInView={{ x:0, opacity: 1 }} 
-            initial={{ x: -100, opacity: 0 }}             
+            <motion.img
+              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ x: -100, opacity: 0 }}
               transition={{ duration: 1 }}
-            className="rounded-2xl" src={aboutImg} alt="about" />
+              className="rounded-2xl"
+              src={aboutImg}
+              alt="about"
+            />
           </div>
         </div>
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:justify-start">
-            <motion.p className="my-2 max-w-2xl py-6" whileInView ={{ x: 0, opacity: 1 }} 
-            initial={{ x: 100, opacity: 0 }}             
-              transition={{ duration: 1 }}>
+            <motion.p
+              className="my-2 max-w-2xl py-6"
+              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ x: 100, opacity: 0 }}
+              transition={{ duration: 1 }}
+            >
               I am a dedicated and versatile software developer with 4+ years of
-              professional experience specializing in UI development. My
-              expertise lies in creating efficient, user-friendly web
-              applications using a diverse set of technologies, including
-              Angular, React, TypeScript, JavaScript, CSS3, HTML5, Bootstrap,
-              Material UI, and RESTful APIs. Additionally, I have familiarity
-              with backend technologies such as Node.js and PL/SQL databases. I
+              professional experience specializing in UI development.My expertise lies in creating efficient, user-friendly web applications using a diverse set of technologies,
+               including React, Angular, TypeScript, JavaScript, CSS3, HTML5, Bootstrap, Material UI, RESTful APIs, Redux. Additionally, I have familiarity with backend technologies such as Node.js and PL/SQL databases I
               am passionate about technology and continuously seek opportunities
               to grow professionally, especially in fast-paced, dynamic
               environments. My web development journey began with a deep
