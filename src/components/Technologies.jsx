@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { SiAngular } from "react-icons/si";
@@ -6,7 +7,7 @@ import { SiTypescript } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
-import { animate, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },

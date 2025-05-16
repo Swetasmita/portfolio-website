@@ -140,7 +140,7 @@ const Project = () => {
         >
           <h6 className="mb-2 font-semibold text-center">Weather App in JS</h6>
           <p className="mb-4 ml-4 text-neutral-400">
-            This app shows current weather and forecasts by fetching real-time data from WeatherAPI based on the user's location. Built with vanilla JavaScript, HTML, and CSS.
+            This app shows current weather and forecasts by fetching real-time data from WeatherAPI based on the user&apos;s location. Built with vanilla JavaScript, HTML, and CSS.
           </p>
         </motion.div>
 
