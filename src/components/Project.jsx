@@ -5,7 +5,7 @@ import myportfolio from "../assets/projects/myportfolio.png";
 import weather from "../assets/projects/weather.png";
 import shoppingCart from "../assets/projects/shoppingCart.png";
 import metaPortfolio from "../assets/projects/metaPortfolio.png";
-import socialMedia from "../assets/projects/socialMedia.jpg";
+import socialMedia from "../assets/projects/socialmedia.png";
 
 const Project = () => {
   return (
