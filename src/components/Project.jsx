@@ -5,6 +5,7 @@ import myportfolio from "../assets/projects/myportfolio.png";
 import weather from "../assets/projects/weather.png";
 import shoppingCart from "../assets/projects/shoppingCart.png";
 import metaPortfolio from "../assets/projects/metaPortfolio.png";
+import socialMedia from "../assets/projects/socialMedia.jpg";
 
 const Project = () => {
   return (
@@ -19,6 +20,30 @@ const Project = () => {
       </motion.h1>
 
       <div className="mb-8 flex flex-wrap lg:justify-center">
+        {/* 1st Project */}
+        <motion.div
+          className="w-full lg:w-1/4 mb-8 flex justify-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <a href="https://github.com/Swetasmita/social-media-app" target="_blank" rel="noopener noreferrer">
+            <img className="rounded-2xl" src={socialMedia} alt="Social media Website" width={400} height={150} />
+          </a>
+        </motion.div>
+        <motion.div
+          className="w-full lg:w-3/4"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h6 className="mb-2 font-semibold text-center"> Mini Social Media App</h6>
+          <p className="mb-4 ml-4 text-neutral-400">
+           A simple, responsive social media-style app built with React and Bootstrap. Users can create, view, and delete posts. It demonstrates modern React features including useReducer, Context API, dynamic routing with React Router, loading state management, and proper useEffect cleanup.
+          </p>
+        </motion.div>
         {/* 1st Project */}
         <motion.div
           className="w-full lg:w-1/4 mb-8 flex justify-center"
